@@ -59,12 +59,12 @@ jobs:
 
       - name: Package Artifacts
         run: |
-          zip -r artifacts/${{ env.NAME }}-${{ env.JAVA8_CF }}.zip manifest.json modlist.html overrides/config/ overrides/scripts/
+          zip -r artifacts/${{ env.NAME }}-${{ env.JAVA8_CF }}.zip manifest.json modlist.html overrides/config/ overrides/mods/ overrides/scripts/
           mv overrides/ .minecraft/
           zip -r artifacts/${{ env.NAME }}-${{ env.JAVA8_MMC }}.zip mmc-pack.json instance.cfg .minecraft/
           mv serverfiles/* ./
           mv -vf .minecraft/* ./
-          zip -r artifacts/${{ env.NAME }}-${{ env.JAVA8_SERVER }}.zip docker-compose.yml PleaseRead.txt Install.* ServerStart.* settings.* TmuxServer.sh config/ mods/ resources/ scripts/
+          zip -r artifacts/${{ env.NAME }}-${{ env.JAVA8_SERVER }}.zip docker-compose.yml PleaseRead.txt Install.* ServerStart.* settings.* TmuxServer.sh config/ mods/ scripts/
 
       - name: Upload Artifacts
         uses: actions/upload-artifact@v5
