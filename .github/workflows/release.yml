@@ -85,16 +85,8 @@ jobs:
       - name: Download All Artifacts
         uses: actions/download-artifact@v6
         with:
-          path: downloads
-
-      - name: Aggregate Artifacts
-        run: |
-          mkdir -p artifacts
-          for d in downloads/*; do
-            if [ -d "$d" ]; then
-              cp -r "$d"/* artifacts/ || true
-            fi
-          done
+          path: artifacts
+          merge-multiple: true
 
       - name: Check or create tag
         run: |
