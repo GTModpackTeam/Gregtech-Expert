@@ -49,6 +49,9 @@ jobs:
           sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./manifest.json
           sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" ./instance.cfg
 
+      - name: Package CurseForge Artifact
+        run: zip -r artifacts/${{ env.NAME }}-${{ env.JAVA8_CF }}.zip manifest.json modlist.html overrides/config/ overrides/mods/ overrides/scripts/
+      
       - name: Install Mods
         env:
           CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
@@ -59,7 +62,6 @@ jobs:
 
       - name: Package Artifacts
         run: |
-          zip -r artifacts/${{ env.NAME }}-${{ env.JAVA8_CF }}.zip manifest.json modlist.html overrides/config/ overrides/mods/ overrides/scripts/
           mv overrides/ .minecraft/
           zip -r artifacts/${{ env.NAME }}-${{ env.JAVA8_MMC }}.zip mmc-pack.json instance.cfg .minecraft/
           mv serverfiles/* ./
