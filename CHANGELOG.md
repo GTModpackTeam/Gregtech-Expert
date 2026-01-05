@@ -1,3 +1,23 @@
+# v4.4.2
+## ModPack update infomation
+- There was a request for an update, so I updated it.
+
+## Modpack other infomation
+- The 1.12.2 version of GTE based on [GregTech CE: Unofficial](https://www.curseforge.com/minecraft/mc-mods/gregtech-ce-unofficial) is now available!!
+
+## Update mods
+- BuildCraft (7.1.25 -> 7.1.27)
+- Buildcraft Compat (7.1.8 -> 7.1.9)
+- CodeChickenCore Unofficial (1.1.11 -> 1.4.10)
+- CodeChickenLib Unofficial (1.1.8 -> 1.3.0)
+- Controlling (1.0.0.4 -> 1.0.0.8)
+- Industrial Craft 2 (2.2.827 -> 2.2.828)
+- JourneyMap (5.1.4 -> 5.2.10)
+- NotEnoughItems Unofficial (2.4.5 -> 2.8.48)
+- Nuclear Control 2 (2.4.3a -> 2.4.5a)
+
+* * *
+
 # v4.4.1
 ## ModPack update infomation
 - Hot fixes to fix a bug that caused some mods to disappear in the cf version.
@@ -8,12 +28,12 @@
 ## Update mods
 - GTTweaker
 
-***
+* * *
 
 # v4.4.0
 ## ModPack update infomation
 - There was a request for an update, so I updated it.
-- The main focus is on QOL, such as updating old mods and switching to later development versions.
+- The main focus is on QoL, such as updating old mods and switching to later development versions.
 
 ## Modpack other infomation
 - The 1.12.2 version of GTE based on [GregTech CE: Unofficial](https://www.curseforge.com/minecraft/mc-mods/gregtech-ce-unofficial) is now available!!
